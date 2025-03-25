@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ArtyPixal Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+      integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Logo -->
+    <div class="nav_bar" id="home">
+      <div class="logo_section">
+        <img src="logo.png" alt="" />
+      </div>
+      <div class="nav-container">
+        <div class="menu-icon" id="menuBtn">
+          <div class="bar"></div>
+          <div class="bar x"></div>
+        </div>
+
+        <div class="nav-links" id="navMenu">
+          <a href="#home">Home</a>
+          <hr />
+          <a href="#creations">Creations</a>
+          <hr />
+          <a href="#thumbnails">Thumbnails</a>
+          <hr />
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- loop text -->
+    <div class="loop-container">
+      <div class="marquee-wrapper">
+        <div class="marquee-content">
+          <span> CUT </span>
+          <span class="outline-text">CRAFT</span>
+          <span>CREATE</span>
+          <span>CUT</span>
+          <span class="outline-text">CRAFT</span>
+          <span>CREATE</span>
+        </div>
+      </div>
+      <div class="center-circle"></div>
+    </div>
+
+    <!-- Label Section -->
+    <div class="label_container">
+      <div class="rounded-label">Editing</div>
+      <div class="rounded-label">Motion</div>
+      <div class="rounded-label">Graphics</div>
+      <div class="rounded-label">Developer</div>
+    </div>
+
+    <!-- About Me Section -->
+    <div class="title_about">
+      <img src="obj2.png" alt="" class="obj_img1" />
+      <img src="obj3.png" alt="" class="obj_img2" />
+      <h1>About Me</h1>
+      <h4>
+        Hi, I'm Darshan, a passionate video editor and the creative mind behind
+        ARTYPIXAL. I specialize in crafting engaging and high-quality videos
+        with seamless editing and storytelling. With a keen eye for detail, I
+        bring ideas to life through visually stunning content.
+      </h4>
+    </div>
+
+    <div class="about_me" id="about">
+      <div class="line"></div>
+      <div class="dot" style="top: 25%"></div>
+      <div class="dot" style="top: 50%"></div>
+      <div class="dot" style="top: 75%"></div>
+      <div class="box box1 contact_info">
+        <div class="contact-box">
+          <div class="contact-title">Contact</div>
+          <div class="skills-description">
+            Smooth edits, stunning videos! Let’s collaborate
+          </div>
+          <div class="contact-content">
+            <div class="contact-icons">
+              <i class="ri-mail-line"></i>
+              <i class="ri-instagram-line"></i>
+              <i class="ri-global-line"></i>
+            </div>
+            <div class="contact-details">
+              <span>artypixal@gmail.com</span>
+              <span>@artypixal</span>
+              <span>www.artypixal.com</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="box box2 skills_info">
+        <div class="skills-box">
+          <div class="skills-title">Skills</div>
+          <div class="skills-description">
+            Creating impactful videos with a keen eye for detail.
+          </div>
+          <div class="labels">
+            <div class="label">Motion Graphics</div>
+            <div class="label">Color Grade</div>
+            <div class="label">Video Crafting</div>
+            <div class="label">Sound Design</div>
+            <div class="label">Storyboarding</div>
+          </div>
+        </div>
+      </div>
+      <div class="box box3 focus_on">
+        <div class="focus-box">
+          <div class="focus-title">Focus On</div>
+          <div class="skills-description">
+            Mastering the art of video editing every day!
+          </div>
+          <div class="focus-container">
+            <div class="focus-item">
+              <div class="square fir"></div>
+              <span class="focus-text">Video Editing</span>
+            </div>
+            <div class="focus-item">
+              <div class="square sec"></div>
+              <span class="focus-text">Sound Design</span>
+            </div>
+            <div class="focus-item">
+              <div class="square thi"></div>
+              <span class="focus-text">Motion Graphics</span>
+            </div>
+            <div class="focus-item">
+              <div class="square for"></div>
+              <span class="focus-text">StoryTelling</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Creations Section -->
+    <div class="creations_section" id="creations">
+      <img src="obj4.png" alt="" class="obj_img2" />
+
+      <div class="title_creations">
+        <h1>Creations</h1>
+        <h3>
+          "Editing magic that turns ordinary clips into extraordinary content!"
+        </h3>
+      </div>
+      <div class="unique-container">
+        <div class="unique-image-box reels" id="openPopup"></div>
+        <div class="unique-text">REELS</div>
+      </div>
+      <div class="unique-container">
+        <div class="unique-image-box shorts" id="triggerPopup"></div>
+        <div class="unique-text">SHORTS</div>
+      </div>
+      <div class="unique-container">
+        <div class="unique-image-box vlog" id="openVid"></div>
+        <div class="unique-text">VLOG</div>
+      </div>
+    </div>
+    <!-- Popup Phone -->
+    <div class="popup-container" id="popup">
+      <div class="popup-content">
+        <button class="close-btn" id="closePopup">&times;</button>
+        <div class="mobile-frame">
+          <div class="mobile-notch"></div>
+          <video id="popupVideo" autoplay>
+            <source src="v1.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </div>
+    <!-- Popup 2 -->
+    <div class="popup-container" id="modalPopup">
+      <div class="popup-content">
+        <button class="close-btn" id="dismissPopup">&times;</button>
+        <div class="mobile-frame">
+          <div class="mobile-notch"></div>
+          <video id="modalVideo" autoplay>
+            <source src="v3.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </div>
+    <!-- Popup Long video -->
+    <div class="vid-popup" id="vidPopup">
+      <div class="vid-content">
+        <button class="vid-close" id="closeVid">&times;</button>
+        <div class="vid-frame">
+          <video class="vid-element" id="popupVid" autoplay>
+            <source src="Vlog.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </div>
+
+    <!-- Before/After section -->
+    <div class="full-container">
+      <video class="video-small" loop muted>
+        <source src="before.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div class="text-small">
+        <h2>Without Editing</h2>
+        <p>Lacks color, clarity, and smooth transitions.</p>
+        <p>Background noise and rough cuts remain.</p>
+      </div>
+      <video class="video-large" loop muted>
+        <source src="after.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div class="text-large">
+        <h2>With Editing</h2>
+        <p>Enhanced visuals, smooth transitions, and clear audio.</p>
+        <p>Professional and engaging final output.</p>
+      </div>
+    </div>
+
+    <!-- Thumbnails section -->
+    <div class="thumbnail_sec" id="thumbnails">
+      <div class="all_slides">
+        <div class="thum_about">
+          <h1>Thumbnails</h1>
+          <h4>
+            "Thumbnails are the key to making your videos discoverable—an
+            attention-grabbing design can <br />turn casual scrollers into loyal
+            subscribers!"
+          </h4>
+        </div>
+        <div class="fade fade-left"></div>
+
+        <!-- Carousel Container -->
+        <div class="carousel">
+          <div class="carousel-track">
+            <div class="slide" style="background-image: url('t1.jpg')"></div>
+            <div class="slide" style="background-image: url('t2.jpg')"></div>
+            <div class="slide" style="background-image: url('t3.jpg')"></div>
+            <div class="slide" style="background-image: url('t4.jpg')"></div>
+            <div class="slide" style="background-image: url('t5.png')"></div>
+            <div class="slide" style="background-image: url('t6.png')"></div>
+          </div>
+        </div>
+
+        <div class="fade fade-right"></div>
+        <div class="fade fade-left"></div>
+
+        <!-- Carousel Container -->
+        <div class="carousel2">
+          <div class="carousel-track2">
+            <div class="slide2" style="background-image: url('t7.png')"></div>
+            <div class="slide2" style="background-image: url('t8.png')"></div>
+            <div class="slide2" style="background-image: url('t9.png')"></div>
+            <div class="slide2" style="background-image: url('t10.png')"></div>
+            <div class="slide2" style="background-image: url('t11.png')"></div>
+            <div class="slide2" style="background-image: url('t12.png')"></div>
+          </div>
+        </div>
+
+        <div class="fade fade-right"></div>
+      </div>
+    </div>
+    <img src="obj5.png" alt="" class="obj_img3" />
+
+    <!-- Lets Talk Section -->
+    <div class="lets_talk" id="contact">
+      <h1>Let's Talk</h1>
+      <h4>
+        "From raw footage to breathtaking visuals, every great edit begins with
+        an idea. Let’s talk and transform yours into something extraordinary!"
+      </h4>
+      <div class="gif_section">
+        <img src="i1.png" alt="Left Image" class="fl-img fl-l" />
+        <img src="i2.png" alt="Right Image" class="fl-img fl-r" />
+      </div>
+      <div class="buttons">
+        <a href="https://www.instagram.com/artypixal/">
+          <button>Lets Chat</button></a
+        >
+        <a href="mailto:artypixal@gmail.com" target="_blank"
+          ><button>Mail Me</button>
+        </a>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer_line"></div>
+
+    <div class="footer_section">
+      <div class="logo">
+        <img src="logo.png" alt="" />
+      </div>
+      <div class="all_links">
+        <a href="#home">Home</a>
+        <a href="#creations">Creations</a>
+        <a href="#thumbnails">Thumbnails</a>
+        <a href="#about">About Me</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+
+    <!-- Javascript -->
+    <script>
+      // popup
+      document
+        .getElementById("openPopup")
+        .addEventListener("click", function (event) {
+          event.preventDefault();
+          document.getElementById("popup").classList.add("active");
+          let video = document.getElementById("popupVideo");
+          video.play();
+        });
+
+      document
+        .getElementById("closePopup")
+        .addEventListener("click", function () {
+          document.getElementById("popup").classList.remove("active");
+          let video = document.getElementById("popupVideo");
+          video.pause();
+        });
+      // Popup2
+      document
+        .getElementById("triggerPopup")
+        .addEventListener("click", function (event) {
+          event.preventDefault();
+          document.getElementById("modalPopup").classList.add("active");
+          let video = document.getElementById("modalVideo");
+          video.play();
+        });
+
+      document
+        .getElementById("dismissPopup")
+        .addEventListener("click", function () {
+          document.getElementById("modalPopup").classList.remove("active");
+          let video = document.getElementById("modalVideo");
+          video.pause();
+        });
+      // Video Popup
+      document
+        .getElementById("popup")
+        .addEventListener("click", function (event) {
+          if (event.target === this) {
+            this.classList.remove("active");
+            document.getElementById("popupVideo").pause();
+          }
+        });
+
+      document
+        .getElementById("popupVideo")
+        .addEventListener("click", function () {
+          if (this.paused) {
+            this.play();
+            this.muted = false;
+          } else {
+            this.pause();
+          }
+        });
+
+      // Video Popup
+      document
+        .getElementById("openVid")
+        .addEventListener("click", function (event) {
+          event.preventDefault();
+          document.getElementById("vidPopup").classList.add("active");
+          let video = document.getElementById("popupVid");
+          video.play();
+        });
+
+      document
+        .getElementById("closeVid")
+        .addEventListener("click", function () {
+          document.getElementById("vidPopup").classList.remove("active");
+          let video = document.getElementById("popupVid");
+          video.pause();
+        });
+
+      document
+        .getElementById("vidPopup")
+        .addEventListener("click", function (event) {
+          if (event.target === this) {
+            this.classList.remove("active");
+            document.getElementById("popupVid").pause();
+          }
+        });
+
+      document
+        .getElementById("popupVid")
+        .addEventListener("click", function () {
+          if (this.paused) {
+            this.play();
+            this.muted = false;
+          } else {
+            this.pause();
+          }
+        });
+
+      // Before/After
+      function handleVideoPlayback(entries) {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.play();
+          } else {
+            entry.target.pause();
+          }
+        });
+      }
+
+      const observer = new IntersectionObserver(handleVideoPlayback, {
+        threshold: 0.5,
+      });
+      document
+        .querySelectorAll("video")
+        .forEach((video) => observer.observe(video));
+
+      // Thumbnail section
+      document.addEventListener("DOMContentLoaded", () => {
+        const track = document.querySelector(".carousel-track");
+        const slides = document.querySelectorAll(".slide");
+
+        // Clone slides to create infinite effect
+        slides.forEach((slide) => {
+          const clone = slide.cloneNode(true);
+          track.appendChild(clone);
+        });
+      });
+
+      document.addEventListener("DOMContentLoaded", () => {
+        const track2 = document.querySelector(".carousel-track2");
+        const slides2 = document.querySelectorAll(".slide2");
+
+        // Clone slides to create infinite effect
+        slides2.forEach((slide2) => {
+          const clone2 = slide2.cloneNode(true);
+          track2.appendChild(clone2);
+        });
+      });
+
+      // Navbar
+      // Navbar
+      const menuBtn = document.getElementById("menuBtn");
+      const navMenu = document.getElementById("navMenu");
+      const navLinks = document.querySelectorAll("#navMenu a"); // Select all links inside the menu
+
+      menuBtn.addEventListener("click", () => {
+        navMenu.classList.toggle("nav-active");
+        menuBtn.classList.toggle("menu-active");
+      });
+
+      // Close the navbar when a link is clicked
+      navLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          navMenu.classList.remove("nav-active");
+          menuBtn.classList.remove("menu-active");
+        });
+      });
+    </script>
+  </body>
+</html>
