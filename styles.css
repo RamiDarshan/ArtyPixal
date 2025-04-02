@@ -1313,6 +1313,7 @@ body {
   }
   .creations_section {
     height: 200vh;
+    background-size: 200%;
   }
   .video-small {
     width: 88%;
